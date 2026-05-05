@@ -118,7 +118,7 @@ export default function HomePage() {
                     </h2>
                     <p className="text-xl text-white max-w-4xl">
                       Breast cancer is the most common cancer among women in
-                      Sub-Saharan Africa, yet for many, it's detected far too
+                      Sub-Saharan Africa, yet for many, it&apos;s detected far too
                       late. Rural clinics lack the tools. Trained specialists
                       are few. And treatment often comes too late.
                     </p>

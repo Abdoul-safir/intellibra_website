@@ -253,7 +253,7 @@ export function AppSection() {
             <p className="text-xl text-gray-300 mb-8">
               With the IntelliBra Pink Alert app, patients can easily register,
               receive screening results, and manage follow-up care—all from
-              their phone. It's secure, bilingual (English & French), and
+              their phone. It&apos;s secure, bilingual (English &amp; French), and
               designed for ease of use, even with limited internet.
             </p>
 
@@ -522,8 +522,8 @@ export function PartnersSection() {
             In Trusted Hands
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We're supported by leading organizations committed to advancing
-            healthcare accessibility and women's health globally.
+            We&apos;re supported by leading organizations committed to advancing
+            healthcare accessibility and women&apos;s health globally.
           </p>
         </motion.div>
 
@@ -581,7 +581,7 @@ export function CTASection() {
             Ready to Learn More?
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Explore the full IntelliBra ecosystem, see how it's changing lives,
+            Explore the full IntelliBra ecosystem, see how it&apos;s changing lives,
             or contact us to become a deployment or research partner.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
