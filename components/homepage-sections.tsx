@@ -244,9 +244,6 @@ export function AppSection() {
             viewport={{ once: true }}
             className="z-10"
           >
-            <div className="bg-gradient-to-r from-[#FF2C62] to-[#C32BFF] text-white px-4 py-2 rounded-full inline-block mb-4">
-              For Patients
-            </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Your Health, In Your Hands
             </h2>
