@@ -1,0 +1,29 @@
+{
+  "pages": {
+    "/trial/page": [
+      "static/chunks/e0611_next_dist_753cc7a1._.js",
+      "static/chunks/Desktop_web-intellibra-standalone_app_favicon_ico_mjs_2d52fbb6._.js",
+      "static/chunks/[root-of-the-server]__ffd45d9f._.css",
+      "static/chunks/e0611_next_2e0fdf09._.js",
+      "static/chunks/c32e0_motion-dom_dist_es_00b06000._.js",
+      "static/chunks/f5152_framer-motion_dist_es_59c78822._.js",
+      "static/chunks/d73b8_tailwind-merge_dist_bundle-mjs_mjs_f3bb6ac0._.js",
+      "static/chunks/4d42a__pnpm_5e93131d._.js",
+      "static/chunks/Desktop_web-intellibra-standalone_cf228733._.js",
+      "static/chunks/Desktop_web-intellibra-standalone_app_layout_tsx_af7beb2c._.js",
+      "static/chunks/e0611_next_dist_client_components_builtin_global-error_34d02df2.js",
+      "static/chunks/Desktop_web-intellibra-standalone_app_trial_TrialPage_tsx_1bcf19b4._.js",
+      "static/chunks/13f9f_lucide-react_dist_esm_icons_aaa13889._.js",
+      "static/chunks/Desktop_web-intellibra-standalone_app_trial_page_tsx_34d02df2._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_9da84e29._.js",
+      "static/chunks/e0611_next_dist_compiled_react-dom_403cea7b._.js",
+      "static/chunks/e0611_next_dist_compiled_next-devtools_index_48d99697.js",
+      "static/chunks/e0611_next_dist_compiled_cc0623a4._.js",
+      "static/chunks/e0611_next_dist_client_adb465d2._.js",
+      "static/chunks/e0611_next_dist_b19be66d._.js",
+      "static/chunks/efba2_@swc_helpers_cjs_a99a5e70._.js",
+      "static/chunks/Desktop_web-intellibra-standalone_a0ff3932._.js",
+      "static/chunks/turbopack-Desktop_web-intellibra-standalone_4f38bebc._.js"
+    ]
+  }
+}

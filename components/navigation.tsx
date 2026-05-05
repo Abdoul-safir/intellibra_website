@@ -35,6 +35,7 @@ const navItems = [
       { name: 'Blog', href: '/updates/blog' },
     ],
   },
+  { name: 'Clinical Trial', href: '/trial' },
   { name: 'Join Us', href: '/join' },
   { name: 'Contact', href: '/contact' },
 ];
