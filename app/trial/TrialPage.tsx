@@ -588,7 +588,7 @@ function SitesSection() {
 // ─── Section 7: Research team ─────────────────────────────────────────────────
 
 const team = [
-  { name: 'Abdoul Azis', role: 'Principal Investigator', affiliation: 'Secretary General, ANORA S.A.S / ABCRF', color: 'bg-[#FF2C62]' },
+  //{ name: 'Abdoul Azis', role: 'Principal Investigator', affiliation: 'Secretary General, ANORA S.A.S / ABCRF', color: 'bg-[#FF2C62]' },
   { name: 'Prof. Blaise Nkegoum', role: 'Co-Principal Investigator', affiliation: 'Permanent Secretary, National Cancer Control Programme, Cameroon', color: 'bg-[#C32BFF]' },
   { name: 'Dr. Michel Auguste Mouelle', role: 'Co-Investigator', affiliation: 'UICC Technical Fellow 2024', color: 'bg-[#FF2C62]' },
   { name: 'ANORA S.A.S', role: 'Primary Sponsor', affiliation: 'Cameroonian startup, Yaoundé, Cameroon', color: 'bg-[#C32BFF]' },
