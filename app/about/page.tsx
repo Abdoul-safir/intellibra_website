@@ -11,7 +11,7 @@ export default function AboutPage() {
     <div className="">
       {/* Hero Section */}
       <section
-        className="relative pt-24 md:pt-28 mb-12 bg-[#0f0f10] text-white overflow-hidden"
+        className="relative pt-20 md:pt-24 pb-0 mb-0 bg-[#0f0f10] text-white overflow-hidden"
         style={{
           backgroundImage: "url('/images/about/hero-bg-circle.png')",
           backgroundRepeat: 'no-repeat',
@@ -65,7 +65,7 @@ export default function AboutPage() {
                     alt="IntelliBra Tablet"
                     width={1000}
                     height={1000}
-                    className="w-full h-auto"
+                    className="w-full max-h-[55vh] object-contain"
                     priority
                   />
                 </div>
@@ -79,15 +79,6 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left copy */}
             <div>
-              <motion.div
-                className="text-primary text-md font-semibold uppercase tracking-wider mb-4"
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-              >
-                Portable breast screening device
-              </motion.div>
               <motion.h2
                 className="text-3xl md:text-4xl font-bold text-gray-900 mb-5"
                 initial={{ opacity: 0, y: 16 }}

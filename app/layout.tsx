@@ -44,7 +44,7 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={`${outfit.className} antialiased`}>
+      <body className={`${outfit.className} antialiased`} suppressHydrationWarning>
         <NextTopLoader
           color="#FF2C62"
           initialPosition={0.08}
