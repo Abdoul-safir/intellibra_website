@@ -589,7 +589,7 @@ function SitesSection() {
 
 const team = [
   //{ name: 'Abdoul Azis', role: 'Principal Investigator', affiliation: 'Secretary General, ANORA S.A.S / ABCRF', color: 'bg-[#FF2C62]' },
-  { name: 'Prof. Blaise Nkegoum', role: 'Co-Principal Investigator', affiliation: 'Permanent Secretary, National Cancer Control Programme, Cameroon', color: 'bg-[#C32BFF]' },
+  { name: 'Prof. Blaise Nkegoum', role: 'Principal Investigator', affiliation: 'Permanent Secretary, National Cancer Control Programme, Cameroon', color: 'bg-[#C32BFF]' },
   { name: 'Dr. Michel Auguste Mouelle', role: 'Co-Investigator', affiliation: 'UICC Technical Fellow 2024', color: 'bg-[#FF2C62]' },
   { name: 'ANORA S.A.S', role: 'Primary Sponsor', affiliation: 'Cameroonian startup, Yaoundé, Cameroon', color: 'bg-[#C32BFF]' },
   { name: 'ABCRF', role: 'Secondary Sponsor', affiliation: 'Anora Breast Cancer Research Foundation, Yaoundé, Cameroon', color: 'bg-[#FF2C62]' },
@@ -814,8 +814,8 @@ function ContactSection() {
             <h3 className="font-bold text-lg mb-5">Principal Investigator</h3>
             <dl className="space-y-3 text-sm">
               {[
-                { label: 'Name', value: 'Abdoul Azis' },
-                { label: 'Title', value: 'Principal Investigator, Secretary General, ABCRF / ANORA S.A.S' },
+                { label: 'Name', value: 'Prof. Blaise NKegoum' },
+                { label: 'Title', value: 'Principal Investigator' },
                 { label: 'Address', value: 'Yaoundé, Emana Rue 9562, Cameroon' },
                 { label: 'Phone', value: '+237 656 170 749 / +237 670 629 094' },
               ].map(({ label, value }) => (
