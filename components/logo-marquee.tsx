@@ -1,46 +1,43 @@
-import { Link } from '../i18n/navigation';
+import Image from 'next/image';
 
-// Real partner/sponsor entities named throughout the site's own trial
-// documentation. Each links out to its real site where one exists publicly;
-// otherwise it links to the relevant page on this site.
 const partners = [
-  { name: 'ANORA', href: 'https://anora.solutions', external: true },
-  { name: 'ABCRF', href: '/trial#contact', external: false },
-  { name: 'CNERSH', href: '/trial#contact', external: false },
-  { name: 'PACTR', href: 'https://pactr.samrc.ac.za', external: true },
-  { name: 'CNBCR', href: '/trial', external: false },
-  { name: 'UICC', href: 'https://www.uicc.org', external: true },
+  { name: 'MINSANTE', src: '/images/partners/minsante.png', width: 167, height: 160 },
+  { name: 'MINPOSTEL', src: '/images/partners/minpostel.png', width: 159, height: 160 },
+  { name: 'APME', src: '/images/partners/apme.png', width: 160, height: 160 },
+  { name: 'Fonds Proto', src: '/images/partners/fonds-proto.png', width: 160, height: 160 },
+  { name: 'Orange', src: '/images/partners/orange.png', width: 160, height: 160 },
+  { name: 'Futurize', src: '/images/partners/futurize.png', width: 468, height: 127, wide: true },
 ];
 
-function PartnerLink({ name, href, external }: (typeof partners)[number]) {
-  const className =
-    'mx-6 flex-shrink-0 font-heading text-lg font-medium tracking-wide text-gray-400 opacity-70 transition-all duration-200 hover:text-primary hover:opacity-100';
-  if (external) {
-    return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
-        {name}
-      </a>
-    );
-  }
-  return (
-    <Link href={href} className={className}>
-      {name}
-    </Link>
-  );
-}
-
-// Infinite scrolling strip of real partner/sponsor names, each clickable.
+// Infinite scrolling strip of partner logos. The list is rendered twice so the
+// loop is seamless; the second copy is hidden from assistive technology.
 export function LogoMarquee() {
   const loop = [...partners, ...partners];
   return (
     <div className="relative overflow-hidden">
       <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-white to-transparent" />
       <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-white to-transparent" />
-      <div className="flex w-max items-center animate-[stats-ticker_24s_linear_infinite]">
-        {loop.map((p, i) => (
-          <PartnerLink key={`${p.name}-${i}`} {...p} />
-        ))}
-      </div>
+      <ul className="flex w-max items-center animate-[stats-ticker_30s_linear_infinite] hover:[animation-play-state:paused]">
+        {loop.map((partner, index) => {
+          const duplicate = index >= partners.length;
+          return (
+            <li
+              key={`${partner.name}-${index}`}
+              aria-hidden={duplicate || undefined}
+              className="mx-7 flex h-16 flex-shrink-0 items-center sm:mx-10"
+            >
+              <Image
+                src={partner.src}
+                alt={duplicate ? '' : partner.name}
+                title={partner.name}
+                width={partner.width}
+                height={partner.height}
+                className={`${partner.wide ? 'h-9 sm:h-10' : 'h-14 sm:h-16'} w-auto object-contain`}
+              />
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }
