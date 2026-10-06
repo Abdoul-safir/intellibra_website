@@ -1,55 +1,34 @@
 'use client';
 
 import * as React from 'react';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Link } from '../i18n/navigation';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Menu, X } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { Button } from './ui/button';
+import { LanguageSwitcher } from './language-switcher';
 import { cn } from '../lib/utils';
 import Image from 'next/image';
 
-const navItems = [
-  { name: 'Home', href: '/' },
-  {
-    name: 'About Us',
-    href: '/about',
-    submenu: [
-      { name: 'Our Mission', href: '/about#mission' },
-      { name: 'Our Journey', href: '/about#journey' },
-      { name: 'Team', href: '/about#team' },
-    ],
-  },
-  {
-    name: 'Products',
-    href: '/products',
-    submenu: [
-      { name: 'IntelliBra Device', href: '/products/intellibra' },
-      { name: 'Mobile App', href: '/products/app' },
-    ],
-  },
-  {
-    name: 'Updates',
-    href: '/updates',
-    submenu: [
-      { name: 'News', href: '/updates/news' },
-      { name: 'Blog', href: '/updates/blog' },
-    ],
-  },
-  { name: 'Clinical Trial', href: '/trial' },
-  { name: 'Join Us', href: '/join' },
-  { name: 'Contact', href: '/contact' },
-];
-
+// Every page now opens with a white/light hero, so the nav can stay in its
+// dark-on-white treatment at all times — no per-route light/dark switching.
 export function Navigation() {
+  const t = useTranslations('nav');
   const [isOpen, setIsOpen] = React.useState(false);
-  const [activeDropdown, setActiveDropdown] = React.useState<string | null>(
-    null,
-  );
   const [isScrolled, setIsScrolled] = React.useState(false);
+
+  const navItems = [
+    { name: t('home'), href: '/' },
+    { name: t('about'), href: '/about' },
+    { name: t('trial'), href: '/trial' },
+    { name: t('team'), href: '/team' },
+    { name: t('news'), href: '/news' },
+    { name: t('contact'), href: '/contact' },
+  ];
 
   React.useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      setIsScrolled(window.scrollY > 24);
     };
     handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -58,138 +37,115 @@ export function Navigation() {
     };
   }, []);
 
+  React.useEffect(() => {
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
   return (
-    <nav
-      className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-colors duration-300',
-        isScrolled
-          ? 'bg-white backdrop-blur-sm border-b border-gray-100'
-          : 'bg-transparent',
-      )}
-    >
-      <div className="container mx-auto px-4 sm:px-2 lg:px-0">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <Image
-              src="/logo/logo.svg"
-              alt="IntelliBra Logo"
-              width={150}
-              height={150}
-            />
-          </Link>
+    <div className="fixed top-4 left-4 right-4 z-50 flex justify-center">
+      <nav
+        aria-label="Primary navigation"
+        className={cn(
+          'w-full max-w-6xl rounded-full border transition-[background-color,border-color,box-shadow,backdrop-filter] duration-[420ms] ease-[cubic-bezier(.22,1,.36,1)]',
+          isScrolled
+            ? 'border-black/[.07] bg-white/95 shadow-[0_.625rem_2rem_rgba(28,17,21,.09)] backdrop-blur-xl'
+            : 'border-transparent bg-white/80 shadow-none backdrop-blur-xl',
+        )}
+      >
+        <div className="px-3 sm:px-4">
+          <div className="flex h-16 items-center justify-between">
+            {/* Logo */}
+            <Link href="/" className="flex items-center space-x-2 pl-1">
+              <Image
+                src="/logo/logo.svg"
+                alt="IntelliBra"
+                width={151}
+                height={42}
+                priority
+                className="h-auto w-[140px]"
+              />
+            </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <div
-                key={item.name}
-                className="relative"
-                onMouseEnter={() =>
-                  item.submenu && setActiveDropdown(item.name)
-                }
-                onMouseLeave={() => setActiveDropdown(null)}
-              >
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center gap-8">
+              {navItems.map((item) => (
                 <Link
+                  key={item.name}
                   href={item.href}
-                  className={cn(
-                    'flex items-center space-x-1 text-gray-700 hover:text-primary transition-colors font-medium',
-                    item.submenu && 'cursor-pointer',
-                  )}
+                  className="text-sm font-medium text-gray-800 transition-colors hover:text-primary"
                 >
-                  <span>{item.name}</span>
-                  {item.submenu && (
-                    <ChevronDown className="w-4 h-4 transition-transform" />
-                  )}
+                  {item.name}
                 </Link>
+              ))}
+            </div>
 
-                {/* Dropdown Menu */}
-                {item.submenu && activeDropdown === item.name && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 10 }}
-                    className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-100 py-2"
-                  >
-                    {item.submenu.map((subItem) => (
-                      <Link
-                        key={subItem.name}
-                        href={subItem.href}
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-primary transition-colors"
-                      >
-                        {subItem.name}
-                      </Link>
-                    ))}
-                  </motion.div>
+            {/* Language switcher + CTA */}
+            <div className="hidden md:flex items-center gap-4">
+              <LanguageSwitcher />
+              <Button asChild variant="pink" size="lg">
+                <Link href="/trial">{t('getStarted')}</Link>
+              </Button>
+            </div>
+
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsOpen(!isOpen)}
+                aria-expanded={isOpen}
+                aria-label={isOpen ? 'Close menu' : 'Open menu'}
+              >
+                {isOpen ? (
+                  <X className="h-6 w-6" />
+                ) : (
+                  <Menu className="h-6 w-6" />
                 )}
-              </div>
-            ))}
-          </div>
-
-          {/* CTA Button */}
-          <div className="hidden md:flex">
-            <Button variant="pink" size="lg">
-              Get Started
-            </Button>
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              {isOpen ? (
-                <X className="h-6 w-6" />
-              ) : (
-                <Menu className="h-6 w-6" />
-              )}
-            </Button>
+              </Button>
+            </div>
           </div>
         </div>
-      </div>
+      </nav>
 
       {/* Mobile Navigation */}
-      {isOpen && (
-        <motion.div
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: 'auto' }}
-          exit={{ opacity: 0, height: 0 }}
-          className="md:hidden bg-white border-t border-gray-100"
-        >
-          <div className="px-4 py-4 space-y-4">
-            {navItems.map((item) => (
-              <div key={item.name}>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            role="dialog"
+            aria-modal="true"
+            aria-label="Mobile navigation"
+            initial={{ opacity: 0, y: -12, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -12, scale: 0.98 }}
+            transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
+            className="absolute top-[4.5rem] left-0 right-0 md:hidden rounded-3xl border border-black/[.07] bg-white/97 shadow-[0_1.5rem_4rem_rgba(28,17,21,.16)] backdrop-blur-xl"
+          >
+            <div className="px-4 py-4 space-y-1">
+              {navItems.map((item) => (
                 <Link
+                  key={item.name}
                   href={item.href}
-                  className="block text-gray-700 hover:text-primary transition-colors font-medium py-2"
+                  className="block rounded-xl px-3 py-2.5 text-gray-800 font-medium transition-colors hover:bg-primary/[.06] hover:text-primary"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </Link>
-                {item.submenu && (
-                  <div className="ml-4 space-y-2">
-                    {item.submenu.map((subItem) => (
-                      <Link
-                        key={subItem.name}
-                        href={subItem.href}
-                        className="block text-sm text-gray-600 hover:text-primary transition-colors py-1"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        {subItem.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
+              ))}
+              <div className="px-3 pt-2">
+                <LanguageSwitcher />
               </div>
-            ))}
-            <Button variant="pink" size="lg" className="w-full">
-              Get Started
-            </Button>
-          </div>
-        </motion.div>
-      )}
-    </nav>
+              <Button asChild variant="pink" size="lg" className="w-full mt-2">
+                <Link href="/trial" onClick={() => setIsOpen(false)}>
+                  {t('getStarted')}
+                </Link>
+              </Button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
   );
 }

@@ -2,27 +2,30 @@
 
 :root {
   --background: #ffffff;
-  /* --foreground: #171717; */
+  --foreground: #151515;
   --primary: #FF2C62;
+  --primary-deep: #DC1749;
   --primary-foreground: #ffffff;
-  --secondary: #f1f5f9;
-  --secondary-foreground: #0f172a;
+  --muted: #606060;
+  --secondary: #f8f5f5;
+  --secondary-foreground: #151515;
   --accent: #f8fafc;
   --accent-foreground: #0f172a;
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
-  --border: #e2e8f0;
-  --input: #e2e8f0;
+  --border: #e9e5e6;
+  --input: #e9e5e6;
   --ring: #FF2C62;
   --pink: #FF2C62;
-  --violet: #C32BFF;
 }
 
 @theme inline {
-  /* --color-background: var(--background); */
+  --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
+  --color-primary-deep: var(--primary-deep);
   --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-accent: var(--accent);
@@ -33,13 +36,20 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-pink: var(--pink);
-  --color-violet: var(--violet);
+  --font-heading: var(--font-heading), Georgia, serif;
 }
 
 
 body {
-  /* background: var(--background); */
+  background: var(--background);
   color: var(--foreground);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading), Georgia, serif;
+  letter-spacing: -0.02em;
 }
 
 /* Smooth scrolling */
@@ -63,4 +73,9 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #E0245E;
+}
+
+@keyframes stats-ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }

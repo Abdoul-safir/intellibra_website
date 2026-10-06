@@ -1,0 +1,392 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "trial": "Essai clinique",
+    "team": "Notre équipe",
+    "news": "Actualités",
+    "contact": "Contact",
+    "getStarted": "Commencer"
+  },
+  "footer": {
+    "aboutTitle": "À propos de nous",
+    "aboutBody": "Un système de dépistage du cancer du sein assisté par IA qui améliore la détection précoce et les soins au Cameroun grâce à des dispositifs intelligents et des outils connectés.",
+    "impactTitle": "Impact",
+    "impact": {
+      "news": "Actualités et jalons",
+      "recognition": "Reconnaissance",
+      "partners": "Partenaires et investisseurs"
+    },
+    "aboutLinksTitle": "À propos",
+    "aboutLinks": {
+      "project": "À propos du projet",
+      "howItWorks": "Comment ça marche",
+      "useCases": "Cas d'usage",
+      "trials": "Essais cliniques",
+      "team": "Notre équipe"
+    },
+    "helpfulTitle": "Liens utiles",
+    "helpful": {
+      "privacy": "Politique de confidentialité",
+      "dataProtection": "Politique de protection des données",
+      "terms": "Conditions d'utilisation",
+      "ethics": "Directives éthiques d'utilisation des données"
+    },
+    "contactTitle": "Contact",
+    "poweredBy": "Propulsé par",
+    "rights": "Tous droits réservés."
+  },
+  "home": {
+    "heroCentered": {
+      "headline1": "Révolutionner la détection",
+      "headline2": "du cancer du sein en Afrique",
+      "lead": "Le cancer du sein est le cancer le plus fréquent chez les femmes en Afrique subsaharienne, mais la plupart des cas sont diagnostiqués trop tard.",
+      "discover": "Découvrir IntelliBra",
+      "partner": "Devenir partenaire"
+    },
+    "heroSplit": {
+      "headline1": "Révolutionner la détection du cancer du sein en",
+      "headline2": "Afrique",
+      "lead": "Le cancer du sein est le cancer le plus fréquent chez les femmes en Afrique subsaharienne, mais la plupart des cas sont diagnostiqués trop tard. IntelliBra apporte un dépistage assisté par IA aux cliniques de première ligne.",
+      "discover": "Découvrir IntelliBra",
+      "partner": "Devenir partenaire",
+      "hospitalSites": "sites hospitaliers",
+      "regionsCovered": "régions couvertes",
+      "offlineReady": "fonctionne hors ligne"
+    },
+    "heroBento": {
+      "headline1": "Révolutionner la détection du cancer du sein en",
+      "headline2": "Afrique",
+      "lead": "Un dispositif de dépistage portable assisté par IA qui apporte la détection précoce aux communautés mal desservies du Cameroun.",
+      "discover": "Découvrir IntelliBra",
+      "partner": "Devenir partenaire",
+      "hospitalSites": "sites hospitaliers au Cameroun",
+      "regionsCovered": "régions couvertes à l'échelle nationale"
+    },
+    "crisis": {
+      "title": "La crise silencieuse qui touche des millions de femmes",
+      "body": "Le cancer du sein est le cancer le plus fréquent chez les femmes en Afrique subsaharienne, mais pour beaucoup, il est détecté bien trop tard. Les cliniques rurales manquent d'équipement. Les spécialistes formés sont rares. Et le traitement arrive souvent trop tard."
+    },
+    "crisisStats": [
+      { "value": "1 sur 8", "label": "femmes développeront un cancer du sein au cours de leur vie" },
+      { "value": "<25%", "label": "des cliniques d'Afrique subsaharienne proposent un dépistage du cancer du sein" },
+      { "value": "60%", "label": "des cas de cancer du sein sont diagnostiqués trop tard" },
+      { "value": "80%", "label": "des patientes doivent payer le traitement de leur poche" }
+    ],
+    "intro": {
+      "titlePrefix": "Découvrez",
+      "titleHighlight": "IntelliBra",
+      "body": "IntelliBra est un système portable de dépistage du cancer du sein assisté par IA, conçu pour les cliniques de première ligne. Grâce à l'imagerie embarquée, au fonctionnement hors ligne et à des diagnostics intelligents, il rend le dépistage abordable et accessible aux communautés mal desservies.",
+      "learnMore": "En savoir plus"
+    },
+    "journey": {
+      "title": "Notre parcours",
+      "lead": "D'une idée audacieuse à un outil clinique concret : développement itératif, validation sur le terrain et perfectionnement continu.",
+      "steps": [
+        { "title": "Prototype", "description": "Conception initiale et développement du dispositif, axés sur l'accessibilité.", "status": "completed" },
+        { "title": "Essais cliniques", "description": "Tests rigoureux en conditions cliniques pour garantir précision et sécurité.", "status": "completed" },
+        { "title": "Pilote", "description": "Tests en conditions réelles dans des communautés d'Afrique subsaharienne.", "status": "in-progress" },
+        { "title": "Lancement commercial", "description": "Déploiement complet des dispositifs IntelliBra et de l'écosystème applicatif.", "status": "upcoming" }
+      ],
+      "done": "Terminé",
+      "inProgress": "En cours"
+    },
+    "mission": {
+      "title": "Conçu pour les soins de première ligne",
+      "lead": "IntelliBra rend possible la détection précoce du cancer du sein, même dans les communautés les plus isolées, en mettant des diagnostics assistés par IA entre les mains des cliniciens de première ligne.",
+      "earlyDetectionTitle": "La détection précoce sauve des vies",
+      "earlyDetectionBody": "En identifiant le cancer du sein à ses stades les plus précoces, IntelliBra améliore considérablement les résultats du traitement et les chances de survie à long terme des femmes.",
+      "realWorldTitle": "Conçu pour un impact réel",
+      "realWorldBody": "Chaque élément du dispositif IntelliBra a été conçu pour un usage concret — de son matériel portable et de son cœur IA intégré à sa connectivité Bluetooth fluide.",
+      "cliniciansTitle": "Donner du pouvoir aux cliniciens de première ligne",
+      "cliniciansBody": "IntelliBra équipe les infirmières et les médecins généralistes d'outils de dépistage du sein intuitifs et assistés par IA, réduisant la dépendance aux spécialistes et permettant une prise de décision confiante au point de soins.",
+      "statValue": "80%",
+      "statLabel": "des dépistages",
+      "statBody": "réalisés par des infirmières et des médecins généralistes utilisant IntelliBra"
+    },
+    "app": {
+      "title": "Votre santé, entre vos mains",
+      "body": "Avec l'application IntelliBra Pink Alert, les patientes peuvent facilement s'inscrire, recevoir leurs résultats de dépistage et gérer leur suivi — le tout depuis leur téléphone. Sécurisée, bilingue (anglais et français), elle est conçue pour être simple d'utilisation, même avec un accès limité à internet.",
+      "googlePlayEyebrow": "DISPONIBLE SUR",
+      "googlePlay": "Google Play",
+      "appStoreEyebrow": "TÉLÉCHARGER SUR",
+      "appStore": "App Store"
+    },
+    "cta": {
+      "title": "Prêt à en savoir plus ?",
+      "body": "Découvrez l'écosystème IntelliBra dans son ensemble, voyez comment il change des vies, ou contactez-nous pour devenir partenaire de déploiement ou de recherche.",
+      "button": "Nous contacter"
+    },
+    "partners": {
+      "title": "Nos partenaires et soutiens"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "À propos d'IntelliBra",
+      "headline": "Des soins connectés contre le cancer pour chaque femme au Cameroun",
+      "lead": "IntelliBra combine un matériel portable assisté par IA, une application guidée pour cliniciens et un moteur de diagnostic entraîné sur des données patientes locales pour apporter la détection précoce du cancer du sein aux cliniques de première ligne.",
+      "cta": "Nous contacter"
+    },
+    "device": {
+      "title1": "Un dispositif de dépistage",
+      "title2": "portable à double technologie",
+      "body": "Le dispositif IntelliBra combine l'échographie et la thermographie pour capturer des données sur les tissus mammaires sans radiation, sans douleur ni procédure invasive. Conçu pour un usage de première ligne, il est portatif, léger, alimenté par batterie et fonctionnel aussi bien en milieu hospitalier que lors de campagnes mobiles."
+    },
+    "tabletApp": {
+      "eyebrow": "Cliniques privées et hôpitaux",
+      "title": "Une application tablette qui guide et enregistre",
+      "lead": "L'interface tablette d'IntelliBra guide les cliniciens à travers chaque étape du dépistage.",
+      "features": [
+        "Saisir les données de la patiente",
+        "Consulter les résultats du scan en temps réel",
+        "Bénéficier d'une assistance diagnostique par IA",
+        "Stocker et synchroniser les dossiers en toute sécurité (même hors ligne)"
+      ]
+    },
+    "ai": {
+      "eyebrow": "Moteur de diagnostic",
+      "title1": "Une IA conçue pour les femmes",
+      "title2": "d'Afrique subsaharienne",
+      "body": "Le moteur de diagnostic d'IntelliBra utilise un modèle d'apprentissage profond entraîné sur des données patientes réelles d'Afrique subsaharienne, garantissant une précision culturellement et cliniquement pertinente. L'IA fournit une classification immédiate pendant le scan et s'améliore avec le temps grâce à un retour de données éthique."
+    },
+    "privacy": {
+      "title": "Une IA protégeant la vie privée et entraînée de façon éthique",
+      "lead": "Toutes les données IntelliBra sont anonymisées, chiffrées et jamais utilisées sans consentement, sous la supervision de comités d'éthique médicale.",
+      "steps": [
+        { "tag": "CAPTURE SUR APPAREIL", "title": "Le dépistage de première ligne commence ici", "text": "Un clinicien formé réalise le dépistage à l'aide d'IntelliBra. Les données d'échographie et de thermographie sont capturées directement sur la tablette, aux côtés des informations de base de la patiente. C'est la seule étape où des identifiants patients existent." },
+        { "tag": "CHIFFRÉ · HORS LIGNE", "title": "Protégées, même hors ligne", "text": "Les données du scan sont chiffrées et enregistrées en toute sécurité sur l'appareil. L'accès nécessite une authentification, et aucune connexion externe n'est requise. Les appareils fonctionnent hors ligne et se synchronisent en toute sécurité lorsqu'une connexion internet est disponible." },
+        { "tag": "SOUMIS AU CONSENTEMENT", "title": "Uniquement avec votre consentement", "text": "Si la patiente y consent, des données de scan dé-identifiées (sans noms ni identifiants) peuvent être utilisées pour améliorer le moteur de diagnostic d'IntelliBra. Notre IA apprend et devient plus performante, sans jamais compromettre la confidentialité." }
+      ]
+    }
+  },
+  "contact": {
+    "hero": { "title": "Contactez-nous" },
+    "intro": {
+      "title": "Contactez-nous à tout moment",
+      "body": "Pour toute question sur IntelliBra, un intérêt de partenariat ou toute autre demande, remplissez notre formulaire de contact rapide. Nous vous répondrons sous 2 à 3 jours ouvrés."
+    },
+    "form": {
+      "firstName": "Prénom*",
+      "lastName": "Nom*",
+      "email": "E-mail*",
+      "phone": "Numéro de téléphone",
+      "organization": "Organisation / Affiliation",
+      "subject": "Objet",
+      "subjectOptions": {
+        "general": "Demande générale",
+        "partnership": "Partenariat",
+        "media": "Presse",
+        "support": "Assistance"
+      },
+      "message": "Message",
+      "preferredMethod": "Moyen de contact préféré",
+      "email2": "E-mail",
+      "phone2": "Téléphone",
+      "either": "Peu importe",
+      "consent": "J'accepte la collecte et la conservation de mes données à des fins de communication.",
+      "send": "Envoyer le message",
+      "successTitle": "Message préparé",
+      "successBody": "Merci de nous avoir contactés. Cet aperçu ne transmet pas encore les données ; connectez le formulaire avant le lancement ou écrivez à support@intellibra.com pour une réponse immédiate.",
+      "sendAnother": "Préparer un autre message"
+    },
+    "card": {
+      "eyebrow": "Contacter IntelliBra",
+      "title": "Nous contacter",
+      "body": "Nous sommes prêts à échanger et à collaborer pour rendre la détection précoce du cancer du sein accessible à toutes.",
+      "addressLabel": "Adresse",
+      "address": "Yaoundé, Bastos",
+      "phoneLabel": "Numéro de téléphone",
+      "phone": "+237-655-541-102",
+      "emailLabel": "E-mail",
+      "email": "support@intellibra.com",
+      "responseTime": "Nous répondons généralement sous 2 à 3 jours ouvrés."
+    }
+  },
+  "trial": {
+    "hero": {
+      "eyebrow": "L’étude clinique IntelliBra",
+      "line1": "Détecter",
+      "line2": "plus tôt.",
+      "lead": "IntelliBra est évalué au Cameroun afin de déterminer comment un dépistage portable assisté par IA peut aider les soignants de première ligne à détecter le cancer du sein plus tôt. L’étude accueillera 2 840 femmes âgées de 25 ans et plus, avec des examens entièrement gratuits.",
+      "imageAlt": "Une clinicienne utilisant une tablette dans un hôpital",
+      "cta": "Lire le protocole",
+      "stats": [
+        { "value": "20", "label": "sites hospitaliers" },
+        { "value": "10", "label": "régions" },
+        { "value": "Gratuit", "label": "pour les femmes de 25 ans et plus" }
+      ]
+    },
+    "about": {
+      "title": "À propos de l'étude",
+      "lead": "Une évaluation multicentrique rigoureuse du dépistage du cancer du sein assisté par IA, dans les 10 régions du Cameroun",
+      "cards": [
+        { "title": "Le dispositif", "body": "IntelliBra est un soutien-gorge connecté intégrant des capteurs d'échographie miniaturisés et une thermographie infrarouge, analysés en temps réel par un algorithme d'IA embarqué. Il se connecte à une application mobile qui transmet les résultats au Registre National Camerounais du Cancer du Sein (CNBCR)." },
+        { "title": "La comparaison", "body": "Les résultats sont comparés à l'examen de référence standard : échographie mammaire pour les femmes de moins de 40 ans et mammographie numérique pour les femmes de 40 ans et plus. En cas d'anomalie suspectée, la biopsie fait office de référence définitive." },
+        { "title": "Critère principal", "body": "L'objectif principal est de mesurer la sensibilité et la spécificité d'IntelliBra par rapport à l'examen de référence. Les critères secondaires incluent la VPP, la VPN, l'AUC, l'acceptabilité par les patientes, la facilité d'utilisation et le taux de détection précoce." },
+        { "title": "Données et confidentialité", "body": "Toutes les données des participantes sont anonymisées et stockées au sein du CNBCR. Aucun numéro d'identité nationale n'est collecté. Les données ne sont accessibles qu'aux chercheurs autorisés et partagées sur demande formelle avec approbation éthique." }
+      ]
+    },
+    "timeline": {
+      "title": "Calendrier de l'étude",
+      "lead": "Une approche par phases pour une validation clinique rigoureuse",
+      "phases": [
+        { "phase": "Phase 0", "title": "Préparation", "participants": "", "body": "Constitution de l'équipe de recherche, soumission éthique au CNERSH, dépôt réglementaire auprès des autorités sanitaires camerounaises, déploiement du matériel sur 20 sites, formation du personnel. Autofinancée par ANORA S.A.S." },
+        { "phase": "Phase I", "title": "Pilote", "participants": "10 participantes", "body": "Tests initiaux des procédures et protocoles de l'étude avant un déploiement à grande échelle. Validation de la faisabilité et du protocole. Résultats utilisés pour confirmer la préparation à l'extension." },
+        { "phase": "Phase II", "title": "Extension", "participants": "50 participantes", "body": "Validation des résultats de la Phase I sur un échantillon plus large. Analyse comparative entre les phases. Financement obtenu par collecte de fonds sur la base des résultats de la Phase I." },
+        { "phase": "Phase III", "title": "Déploiement complet", "participants": "2 840 participantes", "body": "Étude multicentrique complète dans les 10 régions. Analyse statistique finale incluant sensibilité, spécificité, AUC, VPP, VPN et indicateurs d'acceptabilité. Soumission pour publication scientifique évaluée par les pairs." },
+        { "phase": "+12 mois", "title": "Publication des résultats", "participants": "", "body": "Résultats résumés publiés dans le registre PACTR et soumis à des revues scientifiques évaluées par les pairs, conformément aux exigences de l'OMS. Données mises à disposition via la plateforme CNBCR pour la recherche secondaire qualifiée." }
+      ]
+    },
+    "eligibility": {
+      "title": "Qui peut participer",
+      "eyebrow": "Éligibilité en un coup d'œil",
+      "lead": "Le dépistage est gratuit. La participation est volontaire et peut être interrompue à tout moment.",
+      "eligibleLabel": "Vous pourriez être éligible si",
+      "reviewLabel": "Parlez d'abord à l'équipe de l'étude si",
+      "essential": [
+        "Vous êtes une femme âgée de 25 ans ou plus",
+        "Vous vivez près d'un centre d'étude participant",
+        "Vous pouvez consentir et assurer le suivi si nécessaire"
+      ],
+      "review": [
+        "Vous êtes enceinte",
+        "Vous suivez un traitement actif contre le cancer du sein",
+        "Vous avez récemment subi une chirurgie mammaire majeure ou invasive"
+      ],
+      "clinicianNote": "Un clinicien de l'étude confirmera l'éligibilité finale et répondra à vos questions.",
+      "findSite": "Trouver un centre d'étude",
+      "askQuestion": "Poser une question à l'équipe",
+      "inclusionTitle": "Critères d'inclusion",
+      "inclusion": [
+        "Femmes âgées de 25 ans ou plus",
+        "Résidant dans une zone couverte par les centres d'étude participants",
+        "Ayant accepté volontairement de participer après un consentement éclairé complet",
+        "Disponibles pour des examens de suivi à 6 et 12 mois si nécessaire",
+        "Femmes avec ou sans antécédents de maladie du sein ou facteurs de risque"
+      ],
+      "exclusionTitle": "Critères d'exclusion",
+      "exclusion": [
+        "Grossesse confirmée au moment de l'inclusion",
+        "Antécédent de chirurgie mammaire majeure ayant modifié la morphologie du sein",
+        "Condition médicale grave et non stabilisée empêchant une participation sûre",
+        "Traitement actif en cours pour un cancer du sein",
+        "Procédure mammaire invasive dans les 6 mois précédant l'inclusion",
+        "Refus de signer le formulaire de consentement éclairé"
+      ]
+    },
+    "sites": {
+      "title": "Centres de recrutement",
+      "lead": "Sites hospitaliers de référence dans les 10 régions administratives du Cameroun",
+      "eyebrow": "Réseau national de l'étude",
+      "coverageTitle": "Lieux de l’étude",
+      "coverageLead": "Choisissez une région pour voir ses hôpitaux participants.",
+      "regionsLabel": "Régions couvertes",
+      "hospitalsLabel": "Sites hospitaliers",
+      "allSitesLabel": "Hôpitaux participants",
+      "siteCount": "{count, plural, one {# site} other {# sites}}",
+      "regionNames": {
+        "Adamawa": "Adamaoua",
+        "Centre": "Centre",
+        "East": "Est",
+        "Far North": "Extrême-Nord",
+        "Littoral": "Littoral",
+        "North": "Nord",
+        "North West": "Nord-Ouest",
+        "West": "Ouest",
+        "South": "Sud",
+        "South West": "Sud-Ouest"
+      }
+    },
+    "team": {
+      "title": "Équipe de recherche",
+      "lead": "Dirigée par des cliniciens et chercheurs disposant d'une expertise approfondie en oncologie et en diagnostics assistés par IA",
+      "sponsorsLabel": "Partenaires et sponsors",
+      "researchers": [
+        { "name": "Prof. Blaise Nkegoum", "role": "Investigateur principal", "affiliation": "Secrétaire permanent, Programme national de lutte contre le cancer, Cameroun", "slug": "blaise-nkegoum" },
+        { "name": "Dr Michel Auguste Mouelle", "role": "Co-investigateur", "affiliation": "UICC Technical Fellow 2024", "slug": "michel-auguste-mouelle" }
+      ]
+    },
+    "documents": {
+      "title": "Documents",
+      "lead": "Documents de l'étude disponibles au téléchargement",
+      "audience": {
+        "participants": "Participantes",
+        "researchers": "Chercheurs / Éthique",
+        "public": "Actualités publiques"
+      },
+      "items": {
+        "protocol": "Protocole de l'étude (ANORA-INTBRA-CT-2025-V2.2)",
+        "piNoticeFr": "Notice d'information de la participante (français)",
+        "piNoticeEn": "Notice d'information de la participante (anglais)",
+        "icfFr": "Formulaire de consentement éclairé (français)",
+        "icfEn": "Formulaire de consentement éclairé (anglais)",
+        "questionnaireFr": "Questionnaire de la participante (français)",
+        "questionnaireEn": "Questionnaire de la participante (anglais)",
+        "ethicsCert": "Certificat d'approbation éthique (CNERSH)",
+        "sap": "Plan d'analyse statistique",
+        "summaryResults": "Résumé des résultats"
+      },
+      "download": "Télécharger",
+      "pending": "En attente",
+      "upcoming": "Sous 12 mois"
+    },
+    "registry": {
+      "title": "Enregistrement et statut réglementaire",
+      "rows": [
+        { "label": "Numéro de protocole", "value": "ANORA-INTBRA-CT-2025-V2.2" },
+        { "label": "Enregistrement de l'essai", "value": "PACTR et ClinicalTrials.gov, enregistrement en cours" },
+        { "label": "Supervision éthique", "value": "CNERSH, soumission en attente" },
+        { "label": "Dépôt réglementaire (DROS)", "value": "En cours auprès du ministère camerounais de la Santé publique" },
+        { "label": "Partage des données", "value": "Données anonymisées via le CNBCR, 12 mois après la fin de l'étude" }
+      ],
+      "links": {
+        "dataAccess": "Demande d'accès aux données",
+        "pactr": "Registre PACTR",
+        "clinicalTrials": "ClinicalTrials.gov"
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "lead": "Contactez l'équipe de recherche, le comité d'éthique, ou soumettez une demande d'accès aux données",
+      "piTitle": "Investigateur principal",
+      "ethicsTitle": "Comité d'éthique",
+      "dataAccessCta": "Demander l'accès aux données"
+    }
+  },
+  "team": {
+    "hero": {
+      "eyebrow": "Notre équipe",
+      "headline": "Les personnes qui construisent IntelliBra",
+      "lead": "Cliniciens, ingénieurs et chercheurs unis pour apporter la détection précoce du cancer du sein à chaque femme au Cameroun."
+    },
+    "comingSoon": "Photo et bio à venir",
+    "placeholderName": "À annoncer",
+    "sections": [
+      { "title": "Fondateurs", "lead": "L'équipe à l'origine d'IntelliBra.", "slots": ["Fondateur", "Fondateur"] },
+      { "title": "Direction et opérations", "lead": "Les personnes qui font vivre IntelliBra au quotidien.", "slots": ["Membre de la direction", "Membre de la direction", "Membre de la direction"] }
+    ],
+    "researchTitle": "Équipe de recherche clinique",
+    "researchLead": "À la tête de l'essai clinique IntelliBra."
+  },
+  "news": {
+    "hero": {
+      "eyebrow": "Actualités",
+      "headline": "Actualités et jalons",
+      "lead": "Jalons, mentions dans les médias et reconnaissances du parcours IntelliBra. Cette page grandira avec nous."
+    },
+    "comingSoon": "Bientôt disponible",
+    "milestones": {
+      "title": "Jalons",
+      "empty": "Nos jalons clés seront publiés ici."
+    },
+    "media": {
+      "title": "Mentions dans les médias",
+      "empty": "Les couvertures de presse et interviews seront listées ici."
+    },
+    "recognition": {
+      "title": "Reconnaissances et prix",
+      "empty": "Prix, subventions et reconnaissances apparaîtront ici."
+    }
+  }
+}

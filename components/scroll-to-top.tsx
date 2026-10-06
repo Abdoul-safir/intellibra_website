@@ -31,7 +31,7 @@ export function ScrollToTop() {
           exit={{ opacity: 0, y: 20, scale: 0.9 }}
           transition={{ duration: 0.25, ease: 'easeOut' }}
           onClick={handleClick}
-          className="fixed bottom-6 cursor-pointer right-6 z-50 rounded-full p-3 md:p-3.5 bg-gradient-to-br from-[#FF2C62] to-[#C32BFF] text-white shadow-lg shadow-[#FF2C62]/20 ring-1 ring-white/10 hover:shadow-xl hover:shadow-[#FF2C62]/30 focus:outline-none"
+          className="fixed bottom-6 cursor-pointer right-6 z-50 rounded-full p-3 md:p-3.5 bg-primary text-white shadow-lg shadow-primary/20 ring-1 ring-white/10 hover:bg-primary-deep hover:shadow-xl hover:shadow-primary/30 focus:outline-none"
         >
           <ArrowUp className="w-5 h-5" />
         </motion.button>
