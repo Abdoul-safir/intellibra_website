@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Outfit, Fraunces } from 'next/font/google';
+import { DM_Sans, Fraunces } from 'next/font/google';
 import '../globals.css';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
@@ -11,7 +11,7 @@ import { ScrollToTop } from '../../components/scroll-to-top';
 import { TweaksProvider } from '../../lib/tweaks-context';
 import { absoluteUrl, siteDescription, siteName, siteUrl } from '../../lib/site';
 
-const outfit = Outfit({
+const dmSans = DM_Sans({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-body',
@@ -104,7 +104,7 @@ export default async function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={`${outfit.variable} ${fraunces.variable} ${outfit.className} antialiased`} suppressHydrationWarning>
+      <body className={`${dmSans.variable} ${fraunces.variable} ${dmSans.className} antialiased`} suppressHydrationWarning>
         <NextTopLoader
           color="#FF2C62"
           initialPosition={0.08}
