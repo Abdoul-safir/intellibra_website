@@ -348,12 +348,13 @@ function HeroCollective() {
     <section className="bg-white px-4 pb-16 pt-28 sm:px-6 md:pb-24 md:pt-32 lg:px-8">
       <div className="relative mx-auto min-h-[37rem] max-w-7xl overflow-hidden rounded-[2.25rem] bg-[#111522]">
         <Image
-          src="/images/team/team-group.jpg"
-          alt="IntelliBra’s multidisciplinary team smiling together"
+          src="/images/team/gala/pink-gala-group.jpg"
+          alt="The IntelliBra team and guests at the IntelliBra Pink Gala 2025"
           fill
           priority
           sizes="(max-width: 1280px) 100vw, 1280px"
           className="object-cover"
+          style={{ objectPosition: '50% 55%' }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#071426]/95 via-[#071426]/50 to-transparent" />
         <div className="relative flex min-h-[37rem] max-w-2xl flex-col justify-end px-7 py-10 text-white sm:px-10 md:px-14 md:py-14">
@@ -387,13 +388,13 @@ function HeroMosaic() {
         </div>
         <div className="grid h-[34rem] grid-cols-[1.2fr_.8fr] grid-rows-2 gap-4">
           <div className="relative row-span-2 overflow-hidden rounded-[2rem]">
-            <Image src="/images/team/team-group.jpg" alt="IntelliBra team" fill priority sizes="50vw" className="object-cover" />
+            <Image src="/images/team/gala/pink-gala-group.jpg" alt="The IntelliBra team and guests at the IntelliBra Pink Gala 2025" fill priority sizes="(max-width: 1024px) 60vw, 32vw" className="object-cover" style={{ objectPosition: '48% 50%' }} />
           </div>
           <div className="relative overflow-hidden rounded-[2rem] bg-white">
-            <Image src="/images/about/person1.png" alt="A community partner contributing to local health work" fill sizes="25vw" className="object-cover" />
+            <Image src="/images/team/gala/pink-gala-speaker.jpg" alt="A speaker addressing guests at the IntelliBra Pink Gala 2025" fill sizes="(max-width: 1024px) 40vw, 22vw" className="object-cover" style={{ objectPosition: '50% 30%' }} />
           </div>
           <div className="relative overflow-hidden rounded-[2rem] bg-white">
-            <Image src="/images/about/person2.png" alt="A clinician supporting patient care" fill sizes="25vw" className="object-cover" />
+            <Image src="/images/team/gala/pink-gala-volunteers.jpg" alt="IntelliBra volunteers celebrating at the Pink Gala 2025" fill sizes="(max-width: 1024px) 40vw, 22vw" className="object-cover" style={{ objectPosition: '50% 40%' }} />
           </div>
         </div>
       </div>
@@ -524,11 +525,12 @@ function TeamDirectory() {
           </div>
           <div className="relative min-h-[25rem] lg:min-h-[34rem]">
             <Image
-              src="/images/team/team-group.jpg"
-              alt="People contributing to IntelliBra’s mission"
+              src="/images/team/gala/pink-gala-volunteers.jpg"
+              alt="IntelliBra volunteers in Pink Gala shirts at the IntelliBra Pink Gala 2025"
               fill
               sizes="(max-width: 1024px) 100vw, 48vw"
               className="object-cover"
+              style={{ objectPosition: '35% 45%' }}
             />
           </div>
         </div>

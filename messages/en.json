@@ -187,7 +187,7 @@
       "consent": "I agree to the collection and storage of my data for communication purposes.",
       "send": "Send Message",
       "successTitle": "Message prepared",
-      "successBody": "Thanks for reaching out. This design preview does not send data yet; connect the form endpoint before launch, or email support@intellibra.com for an immediate response.",
+      "successBody": "Thanks for reaching out. This design preview does not send data yet; connect the form endpoint before launch, or email contact@anora.solutions for an immediate response.",
       "sendAnother": "Prepare another message"
     },
     "card": {
@@ -197,9 +197,9 @@
       "addressLabel": "Address",
       "address": "Yaoundé, Bastos",
       "phoneLabel": "Phone Number",
-      "phone": "+237-655-541-102",
+      "phone": "+237 670 629 094",
       "emailLabel": "Email",
-      "email": "support@intellibra.com",
+      "email": "contact@anora.solutions",
       "responseTime": "We typically respond within 2–3 business days."
     }
   },

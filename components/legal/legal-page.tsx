@@ -88,7 +88,7 @@ export function LegalPage({ locale, documentKey }: { locale: string; documentKey
               <h2 className="text-3xl font-semibold">{document.contactTitle}</h2>
               <p className="mt-3 max-w-2xl text-sm leading-6 text-white/55">{document.contactBody}</p>
               <Link href="/contact" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-white">
-                support@intellibra.com
+                contact@anora.solutions
                 <ArrowUpRight className="h-4 w-4" />
               </Link>
             </div>

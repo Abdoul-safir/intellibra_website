@@ -109,8 +109,8 @@ export function Footer() {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary" />
-                <a href="tel:+237655541102" className="text-gray-300 transition-colors hover:text-primary">
-                  +237 655 541 102
+                <a href="tel:+237670629094" className="text-gray-300 transition-colors hover:text-primary">
+                  +237 670 629 094
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -120,8 +120,8 @@ export function Footer() {
                   width={20}
                   height={20}
                 />
-                <a href="mailto:support@intellibra.com" className="text-gray-300 transition-colors hover:text-primary">
-                  support@intellibra.com
+                <a href="mailto:contact@anora.solutions" className="text-gray-300 transition-colors hover:text-primary">
+                  contact@anora.solutions
                 </a>
               </div>
             </div>

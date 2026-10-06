@@ -187,7 +187,7 @@
       "consent": "J'accepte la collecte et la conservation de mes données à des fins de communication.",
       "send": "Envoyer le message",
       "successTitle": "Message préparé",
-      "successBody": "Merci de nous avoir contactés. Cet aperçu ne transmet pas encore les données ; connectez le formulaire avant le lancement ou écrivez à support@intellibra.com pour une réponse immédiate.",
+      "successBody": "Merci de nous avoir contactés. Cet aperçu ne transmet pas encore les données ; connectez le formulaire avant le lancement ou écrivez à contact@anora.solutions pour une réponse immédiate.",
       "sendAnother": "Préparer un autre message"
     },
     "card": {
@@ -197,9 +197,9 @@
       "addressLabel": "Adresse",
       "address": "Yaoundé, Bastos",
       "phoneLabel": "Numéro de téléphone",
-      "phone": "+237-655-541-102",
+      "phone": "+237 670 629 094",
       "emailLabel": "E-mail",
-      "email": "support@intellibra.com",
+      "email": "contact@anora.solutions",
       "responseTime": "Nous répondons généralement sous 2 à 3 jours ouvrés."
     }
   },

@@ -38,7 +38,7 @@ const english: Record<LegalDocumentKey, LegalDocument> = {
     owner: 'ANORA S.A.S.',
     contentsLabel: 'On this page',
     contactTitle: 'Questions about privacy?',
-    contactBody: 'Contact support@intellibra.com. A dedicated privacy contact and response procedure will be confirmed before launch.',
+    contactBody: 'Contact contact@anora.solutions. A dedicated privacy contact and response procedure will be confirmed before launch.',
     sections: [
       { id: 'purpose', title: 'Purpose and scope', body: ['This draft describes the privacy approach intended for visitors, prospective partners, research participants, clinicians, and other people who interact with IntelliBra digital services.', 'Clinical-study information and medical records may be governed by additional consent forms, research protocols, and applicable health-data requirements.'] },
       { id: 'information', title: 'Information we may process', body: ['The final policy should identify every category of information collected and the source of that information.'], bullets: ['Contact details submitted through forms', 'Organization and partnership information', 'Technical information needed for security and service reliability', 'Consent choices and communication preferences', 'Clinical or research data only where separately authorized'] },
@@ -60,7 +60,7 @@ const english: Record<LegalDocumentKey, LegalDocument> = {
     owner: 'ANORA S.A.S.',
     contentsLabel: 'On this page',
     contactTitle: 'Report a data concern',
-    contactBody: 'Contact support@intellibra.com. A dedicated security and data-protection reporting channel will be confirmed before launch.',
+    contactBody: 'Contact contact@anora.solutions. A dedicated security and data-protection reporting channel will be confirmed before launch.',
     sections: [
       { id: 'principles', title: 'Protection principles', body: ['IntelliBra intends to apply purpose limitation, data minimization, accuracy, retention control, confidentiality, accountability, and privacy by design throughout the information lifecycle.'] },
       { id: 'classification', title: 'Classification and access', body: ['Information should be classified according to sensitivity. Access to clinical and research information should follow least-privilege rules and be reviewed regularly.'], bullets: ['Role-based access and strong authentication', 'Separation of identifying and research data where practical', 'Documented authorization for exports and secondary use', 'Audit records for sensitive access and changes'] },
@@ -82,7 +82,7 @@ const english: Record<LegalDocumentKey, LegalDocument> = {
     owner: 'ANORA S.A.S.',
     contentsLabel: 'On this page',
     contactTitle: 'Questions about these terms?',
-    contactBody: 'Contact support@intellibra.com. Formal legal contact information will be added to the approved version.',
+    contactBody: 'Contact contact@anora.solutions. Formal legal contact information will be added to the approved version.',
     sections: [
       { id: 'acceptance', title: 'Using the website', body: ['The final terms should explain when acceptance occurs, who may use the services, and which additional agreements apply to clinical, research, partner, or account-based services.'] },
       { id: 'medical', title: 'Clinical information disclaimer', body: ['Website content is provided for general information and should not replace professional medical advice, diagnosis, emergency care, or the judgment of a qualified clinician.', 'Product and trial information may change as evaluation and regulatory work progresses.'] },
@@ -104,7 +104,7 @@ const english: Record<LegalDocumentKey, LegalDocument> = {
     owner: 'ANORA S.A.S.',
     contentsLabel: 'On this page',
     contactTitle: 'Raise an ethical concern',
-    contactBody: 'Contact support@intellibra.com. Independent ethics and whistleblowing channels will be listed after formal approval.',
+    contactBody: 'Contact contact@anora.solutions. Independent ethics and whistleblowing channels will be listed after formal approval.',
     sections: [
       { id: 'respect', title: 'Respect, consent, and agency', body: ['People should receive understandable information about what data is collected, why it is needed, who may use it, foreseeable risks, and how to ask questions or withdraw where withdrawal is possible.', 'Refusal to contribute data should not reduce access to appropriate care.'] },
       { id: 'fairness', title: 'Fairness and representation', body: ['Data collection and model evaluation should reflect the communities IntelliBra intends to serve. Performance should be assessed across relevant demographic and clinical groups, with limitations communicated plainly.'] },
@@ -128,7 +128,7 @@ const french: Record<LegalDocumentKey, LegalDocument> = Object.fromEntries(
       ownerLabel: 'Responsable du document',
       contentsLabel: 'Sur cette page',
       contactTitle: 'Une question ou une préoccupation ?',
-      contactBody: "Contactez support@intellibra.com. Les coordonnées officielles et la procédure de réponse seront confirmées avant le lancement.",
+      contactBody: "Contactez contact@anora.solutions. Les coordonnées officielles et la procédure de réponse seront confirmées avant le lancement.",
     },
   ]),
 ) as Record<LegalDocumentKey, LegalDocument>;
