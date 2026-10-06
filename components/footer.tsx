@@ -32,16 +32,16 @@ export function Footer() {
   return (
     <footer className="bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-6">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,1.2fr)_minmax(15rem,auto)] xl:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)_minmax(0,1fr)_minmax(0,1.25fr)_minmax(15rem,auto)]">
           {/* Left: Logo + About Page */}
-          <div className="lg:col-span-2">
+          <div className="sm:col-span-2 lg:col-span-4 xl:col-span-1">
             <div className="mb-6">
               <Image
                 src="/logo/logo-footer.svg"
                 alt="IntelliBra"
                 width={281}
                 height={84}
-                className="h-auto w-[200px]"
+                className="h-auto w-full max-w-[200px]"
               />
             </div>
             <div className="space-y-3 max-w-md">
@@ -108,19 +108,20 @@ export function Footer() {
             <h4 className="font-semibold text-lg mb-4 text-primary">{t('contactTitle')}</h4>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-primary" />
-                <a href="tel:+237670629094" className="text-gray-300 transition-colors hover:text-primary">
+                <Phone className="h-5 w-5 shrink-0 text-primary" />
+                <a href="tel:+237670629094" className="whitespace-nowrap text-gray-300 transition-colors hover:text-primary">
                   +237 670 629 094
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Image
                   src="/icons/mail.svg"
-                  alt="Mail"
+                  alt=""
                   width={20}
                   height={20}
+                  className="shrink-0"
                 />
-                <a href="mailto:contact@anora.solutions" className="text-gray-300 transition-colors hover:text-primary">
+                <a href="mailto:contact@anora.solutions" className="min-w-0 text-gray-300 transition-colors [overflow-wrap:anywhere] hover:text-primary sm:whitespace-nowrap">
                   contact@anora.solutions
                 </a>
               </div>
